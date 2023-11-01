@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .container{
+            margin: auto;
+            width: 600px;
+        }
+        .nav{
+            display: block;
+            top: 0px;
+            background-color: black;
+            height: 70px;
+            width:100%;
+            margin-bottom: 50px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .nav a{
+            display: block;
+            width: 80px;
+            float: left;
+            font-size: large;
+            padding: 26px;
+            margin-right: 5px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-style: normal;
+            background-color: gray;
+            text-align: center;
+            color : white ;
+
+        }
+        .nav a:hover{
+            font-size: larger;
+            background-color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="about.html">about</a>
+        <a href="index.html">index</a>
+        <a href="list_data.html">list_data</a>
+        <a href="table.html">table</a>
+    </div>
+
+    <div class="container">     
+        <form>
+            <fieldset>
+                <legend>Login</legend>
+                
+                <table>
+                <tr>
+                    <td><label> Username : </label> </td>
+                    <td><input type="username" name="username" placeholder="username..." ></td>
+                </tr>
+                <br>
+                <tr>
+                    <td><label> Password : </label></td>
+                    <td><input type="password" name="password" placeholder="password..."></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Login</button></td>
+                </tr>
+                </table>
+            </fieldset>
+        </form>
+        <br>
+        <form>
+            <fieldset>
+                <legend>Register</legend>
+                <table>
+                    <tr>
+                        <td><label>Masukkan Nama : </label></td>
+                        <td><input type="username" name="usernamee" placeholder="Masukkan Nama..."></td>
+                    </tr>
+                    <tr>
+                        <td><label>Masukkan Email : </label></td>
+                        <td><input type="email" name="email" placeholder="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Masukkan Password : </label></td>
+                        <td><input type="password" name="password" placeholder="Masukkan Password..."></td>
+                    </tr>
+                    <tr>
+                        <td><label>Masukkan Umur anda : </label></td>
+                        <td><input type="text" name="umur" placeholder="Masukkan Umur..."></td>
+                    </tr>
+                    <tr>
+                        <td><label>Tanggal Lahir : </label></td>
+                        <td><input type="date" name="date" max="2030-12-31"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Lulusan : </label></td>
+                        <td><select>
+                            <option>SD</option>
+                            <option>SMP</option>
+                            <option>SMA</option>
+                            <option>Lainnya..</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="checkbox">Saya Menyetujui Segala Persyaratan </label></td>
+                        <td><input type="checkbox" name="checkbox" id="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="submit">Konfirmasi</button></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+        </table>
+    </div>
+    
+</body>
+</html>
